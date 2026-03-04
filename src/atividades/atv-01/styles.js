@@ -20,6 +20,13 @@ const styles = StyleSheet.create({
         width: '100%',
         textAlign: 'center',
     },
+    texto2: {
+        fontSize: 14,
+        width: '100%',
+        textAlign: 'right',
+        color: '#F00',
+        marginTop: 50,
+    },
 });
 
 export default styles;
