@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 
-import Exemplo01 from './src/exemplos/ex-01';
+import Exemplo01 from './src/exemplos/ex01';
 
-import Atividade01 from './src/atividades/atv-01';
+import Atividade01 from './src/atividades/atv01';
 
 export default function App() {
   return (
