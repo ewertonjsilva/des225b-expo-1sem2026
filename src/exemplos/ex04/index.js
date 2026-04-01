@@ -36,7 +36,7 @@ export default function Exemplo04() {
             <TextInput
                 value={txt2} 
                 onChangeText={setTxt2}
-                placeholder='digite sua mensagem'
+                // placeholder='digite sua mensagem'
                 keyboardType='ascii-capable'                
                 style={styles.input}
             />
