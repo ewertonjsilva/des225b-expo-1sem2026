@@ -6,7 +6,7 @@ import Botao from './botao';
 
 import styles from './styles';
 
-export default function Exemplo6() {
+export default function Exemplo06() {
 
     const [peso, setPeso] = useState(null);
     const [altura, setAltura] = useState(null);

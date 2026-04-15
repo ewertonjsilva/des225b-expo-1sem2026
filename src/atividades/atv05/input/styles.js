@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
         borderColor: '#1E90FF',
         color: 'deepskyblue',
         borderRadius: RFValue(10),
-        padding: RFValue(10)
+        padding: RFValue(10), 
     },
     txtEntradaUsando: {
         borderColor: 'deepskyblue',
-        outline: 'none',
+        outlineColor: 'deepskyblue',
     },
 });
 
