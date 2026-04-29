@@ -12,7 +12,8 @@ import Atividade01 from './src/atividades/atv01';
 import Atividade02 from './src/atividades/atv02'; 
 import Atividade03 from './src/atividades/atv03'; 
 import Atividade04 from './src/atividades/atv04'; 
-import Atividade05 from './src/atividades/atv05';
+import Atividade05 from './src/atividades/atv05'; 
+import Atividade06 from './src/atividades/atv06';
 
 import RevisaoAtv02 from './src/revisao/rev-atv-02';
 import Exemplo03_passos from './src/revisao/ex03'; 
@@ -21,7 +22,7 @@ import RevAtv04 from './src/revisao/rev-atv-04';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo06 />
+      <Atividade06 />
       <StatusBar style="auto" />
     </View>
   );
