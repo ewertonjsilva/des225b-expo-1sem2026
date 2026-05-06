@@ -15,8 +15,8 @@ export default function Atividade6() {
     const mensErro = 'Valores inseridos de forma incorreta!';
 
     function handleExecutaCalculo() {
-            const imc = calculaImc();
-            exibeMensagemImc(imc);
+        const imc = calculaImc();
+        exibeMensagemImc(imc);
     }
 
     function calculaImc() {
@@ -25,14 +25,45 @@ export default function Atividade6() {
     }
 
     function exibeMensagemImc(imc) {
-        let mensagem = ''; 
+        let mensagem = '';
         setImc(imc);
 
+        // resolução 1
+        if (imc < 18.5) {
+            mensagem = 'Abaixo do peso';
+        } else if (imc < 25) {
+            mensagem = 'Peso normal';
+        } else if (imc < 30) {
+            mensagem = 'Sobrepeso';
+        } else if (imc < 35) {
+            mensagem = 'Obsedidade grau I';
+        } else if (imc < 40) {
+            mensagem = 'Obsedidade grau II';
+        } else {
+            mensagem = 'Obsedidade grau III';
+        }
+
+        // resolução 2
+        if (imc < 18.5) {
+            mensagem = 'Abaixo do peso';
+        } else if (imc >= 18.5 && imc < 25) {
+            mensagem = 'Peso normal';
+        } else if (imc >= 25 && imc < 30) {
+            mensagem = 'Sobrepeso';
+        } else if (imc >= 30 && imc < 35) {
+            mensagem = 'Obsedidade grau I';
+        } else if (imc >= 35 && imc < 40) {
+            mensagem = 'Obsedidade grau II';
+        } else {
+            mensagem = 'Obsedidade grau III';
+        }
+
+        // resolução 3
         if (imc < 18.5) {
             mensagem = 'Abaixo do peso';
         }
 
-        if (imc >= 18.5 && imc < 25) {
+        if (imc >= 18.5 && im < 25) {
             mensagem = 'Peso normal';
         }
 
@@ -47,7 +78,7 @@ export default function Atividade6() {
         if (imc >= 35 && imc < 40) {
             mensagem = 'Obsedidade grau II';
         }
-        
+
         if (imc >= 40) {
             mensagem = 'Obsedidade grau III';
         }
