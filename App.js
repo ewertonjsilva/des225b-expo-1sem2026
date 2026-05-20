@@ -7,7 +7,8 @@ import Exemplo03 from './src/exemplos/ex03';
 import Exemplo04 from './src/exemplos/ex04'; 
 import Exemplo05 from './src/exemplos/ex05';
 import Exemplo06 from './src/exemplos/ex06';
-import Exemplo07 from './src/exemplos/ex07';
+import Exemplo07 from './src/exemplos/ex07'; 
+import Exemplo08 from './src/exemplos/ex08';
 
 import Atividade01 from './src/atividades/atv01';
 import Atividade02 from './src/atividades/atv02'; 
@@ -23,7 +24,7 @@ import RevAtv04 from './src/revisao/rev-atv-04';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo07 />
+      <Exemplo08 />
       <StatusBar style="auto" />
     </View>
   );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { View, Text, FlatList, Alert, Platform } from 'react-native';
-import uuid from 'react-native-uuid';
+// import uuid from 'react-native-uuid';
+import { v4 as uuidv4 } from "uuid";
 
 import ItemLista from './itemLista';
 import AddItem from './addItem';
@@ -10,10 +11,10 @@ import styles from './styles';
 export default function Exemplo8() {
 
     const [items, setItems] = useState([
-        { id: uuid.v4(), text: 'Leite integral' },
-        { id: uuid.v4(), text: 'Pão de forma' },
-        { id: uuid.v4(), text: 'Nescau' },
-        { id: uuid.v4(), text: 'Manteiga' },
+        { id: uuidv4(), text: 'Leite integral' },
+        { id: uuidv4(), text: 'Pão de forma' },
+        { id: uuidv4(), text: 'Nescau' },
+        { id: uuidv4(), text: 'Manteiga' },
     ]); // [] array ou lista de itens   
 
     function deleteItem(id) {
@@ -24,12 +25,12 @@ export default function Exemplo8() {
 
     function addItems(text) {
         if (text === '') {
-            Platform === 'web'
+            Platform.OS === 'web'
                 ? alert('O valor do item não pode ser vazio')
                 : Alert.alert('Erro', 'O valor do item não pode ser vazio', [{ text: "OK" }]);
         } else {
             setItems(prevItems => {
-                return [{ id: uuid.v4(), text }, ...prevItems];
+                return [{ id: uuidv4(), text }, ...prevItems];
             });
         }
     }
