@@ -9,13 +9,15 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~54.0.33",
+    "@expo/vector-icons": "^15.1.1",
+    "expo": "^56.0.9",
     "expo-status-bar": "~3.0.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.5",
     "react-native-responsive-fontsize": "^0.5.1",
-    "react-native-web": "^0.21.0"
+    "react-native-web": "^0.21.0",
+    "uuid": "^14.0.0"
   },
   "private": true
 }
