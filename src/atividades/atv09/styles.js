@@ -1,3 +1,5 @@
+// file: des225b-expo-1sem2026/src/atividades/atv09/styles.js
+
 import { StyleSheet } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
@@ -22,12 +24,10 @@ const style = StyleSheet.create({
     game: {        
         flex: 1,
         backgroundColor: '#fff',
-
     },
     gameBoard: {
         alignItems: 'center',
         justifyContent: 'center',
-        // height: '50%',
     },
     boardRow: {
         flexDirection: 'row',
@@ -36,15 +36,26 @@ const style = StyleSheet.create({
         fontSize: RFValue(18),
     },
     containerHistorico: {
-        justifyContent: 'center',
+        marginTop: RFValue(20),
         alignItems: 'center',
         height: '50%'
     },
     btnReiniciar: {
         backgroundColor: '#999',
-        padding: RFValue(20),
+        padding: RFValue(15),
         marginBottom: RFValue(10),
         borderRadius: RFValue(20),
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: '#ccc',
+        padding: 10,
+        borderRadius: 8,
+        fontSize: 16,
+        marginBottom: 15,
+        backgroundColor: '#fafafa',
     },
 });
 

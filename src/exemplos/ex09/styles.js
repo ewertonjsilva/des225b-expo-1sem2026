@@ -22,7 +22,6 @@ const style = StyleSheet.create({
     game: {        
         flex: 1,
         backgroundColor: '#fff',
-
     },
     gameBoard: {
         alignItems: 'center',
